@@ -11,11 +11,13 @@ import "../styles/index.scss";
 //import your own components
 import { Navbar } from "./component/navbar.js";
 import { Content } from "./component/content.js";
+import { Footer } from "./component/footer.js";
 //render your react application
 ReactDOM.render(
 	<div>
 		<Navbar />
 		<Content />
+		<Footer />
 	</div>,
 	document.querySelector("#app")
 );
