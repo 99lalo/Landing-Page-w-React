@@ -12,4 +12,10 @@ import "../styles/index.scss";
 import { Navbar } from "./component/navbar.js";
 import { Content } from "./component/content.js";
 //render your react application
-ReactDOM.render(<Navbar />, <Content />, document.querySelector("#app"));
+ReactDOM.render(
+	<div>
+		<Navbar />
+		<Content />
+	</div>,
+	document.querySelector("#app")
+);
