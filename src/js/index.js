@@ -9,25 +9,7 @@ import "bootstrap";
 import "../styles/index.scss";
 
 //import your own components
-import { Navbar } from "./component/navbar.js";
-import { Content } from "./component/jumbotron.js";
-import { Footer } from "./component/footer.js";
-import { Card } from "./component/card.js";
+import { Home } from "./component/home.js";
 
 //render your react application
-ReactDOM.render(
-	<div>
-		<Navbar />
-		<div className="container">
-			<Content />
-			<div className="row justify-content-between m-1">
-				<Card />
-				<Card />
-				<Card />
-				<Card />
-			</div>
-		</div>
-		<Footer />
-	</div>,
-	document.querySelector("#app")
-);
+ReactDOM.render(<Home />, document.querySelector("#app"));
